@@ -1,9 +1,9 @@
-on:push
+on: push
 jobs:
   build-node:
     runs-on: ubontu-latest
     container: node:14
-    steps: 
+    steps:
       - run: node --version
       - run: npm --version
       - uses: actions/checkout@v3
